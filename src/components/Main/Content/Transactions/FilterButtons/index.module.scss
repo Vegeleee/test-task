@@ -1,0 +1,43 @@
+.filterButtons {
+	display: flex;
+	align-items: center;
+
+	&Group {
+		display: flex;
+		align-items: center;
+
+		& + & {
+			margin-left: 80px;
+		}
+
+		.filterButton {
+			font-family: 'Gilroy-Bold', sans-serif;
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 0.04em;
+			background: transparent;
+			padding: 0;
+			border: none;
+			cursor: pointer;
+
+			&Active {
+				position: relative;
+
+				&::after {
+					content: '';
+					position: absolute;
+					height: 5px;
+					width: 100%;
+					background-color: #f8a303;
+					border-radius: 5px;
+					left: 0;
+					bottom: -10px;
+				}
+			}
+		}
+
+		.filterButton + .filterButton {
+			margin-left: 24px;
+		}
+	}
+}

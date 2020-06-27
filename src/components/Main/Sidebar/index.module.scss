@@ -1,0 +1,31 @@
+aside {
+	flex-basis: 240px;
+	height: 100%;
+	padding: 60px;
+	background: #ffffff;
+	border-right: 1px solid rgba(62, 68, 91, 0.1);
+}
+
+.navList {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.04em;
+
+	&Item {
+		display: flex;
+		align-items: center;
+
+		&Icon {
+			margin-right: 11px;
+		}
+
+		& + & {
+			margin-top: 24px;
+		}
+	}
+}

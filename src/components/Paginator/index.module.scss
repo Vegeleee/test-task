@@ -1,0 +1,25 @@
+.paginator {
+	display: flex;
+	align-items: center;
+	font-family: 'Gilroy-Regular', sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	justify-content: center;
+
+	.page {
+		padding: 0;
+		border: none;
+		background: transparent;
+		opacity: 0.6;
+		cursor: pointer;
+
+		&Active {
+			opacity: 1;
+			font-weight: bold;
+		}
+	}
+
+	.page + .page {
+		margin-left: 7px;
+	}
+}
