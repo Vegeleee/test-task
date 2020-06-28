@@ -1,13 +1,12 @@
 import React from 'react'
 import cn from 'classnames'
 
-import cardIconFirst from './../../../../../images/card-icons/card-icon-1.png'
 import unlockedIcon from './../../../../../images/card-icons/unlocked.svg'
 import lockedIcon from './../../../../../images/card-icons/locked.svg'
 
 import styles from './index.module.scss'
 
-const Card = ({ data, desc, subdata }) => {
+const Card = ({ data, desc, subdata, icon }) => {
 	return (
 		<div className={styles.card}>
 			<div className={styles.cardData}>
@@ -15,7 +14,7 @@ const Card = ({ data, desc, subdata }) => {
 					{data} <span className={cn('textGray', styles.cardDataTextGray)}>{desc}</span>
 				</div>
 				<div className={styles.cardDataIcon}>
-					<img src={cardIconFirst} alt="Icon" />
+					<img src={icon} alt="Icon" />
 				</div>
 			</div>
 			{subdata && (

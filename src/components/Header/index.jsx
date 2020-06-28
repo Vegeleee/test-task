@@ -26,8 +26,8 @@ class Header extends React.Component {
 				<div className={styles.accountInfo} onClick={this.toggleModal}>
 					<h3>Account name</h3>
 					<img src={accountIcon} alt="Icon" className={styles.accountIcon} />
-					{isModalShow && <HeaderModal />}
 				</div>
+				{isModalShow && <HeaderModal />}
 			</header>
 		)
 	}

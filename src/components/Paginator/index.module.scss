@@ -12,8 +12,14 @@
 		background: transparent;
 		opacity: 0.6;
 		cursor: pointer;
+		transition: ease 0.3s;
 
 		&Active {
+			opacity: 1;
+			font-weight: bold;
+		}
+
+		&:hover {
 			opacity: 1;
 			font-weight: bold;
 		}

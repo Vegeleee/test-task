@@ -10,6 +10,7 @@
 	border-spacing: 0 16px;
 	width: 100%;
 	margin-bottom: 15px;
+	border-collapse: collapse;
 
 	&Head {
 		font-family: 'Gilroy-Bold', sans-serif;
@@ -24,12 +25,16 @@
 		line-height: 16px;
 	}
 
-	&RowName {
-		display: flex;
-		align-items: center;
+	&Row {
+		border-bottom: 1px solid rgba(62, 68, 91, 0.1);
 
-		img {
-			margin-right: 8px;
+		&Name {
+			display: flex;
+			align-items: center;
+
+			img {
+				margin-right: 8px;
+			}
 		}
 	}
 

@@ -26,7 +26,7 @@ const Resources = () => {
 								r="15.91549430918954"
 								fill="transparent"
 								stroke="#27ae60"
-								strokeWidth="8"
+								strokeWidth="7"
 								strokeDasharray="43 57"
 								strokeDashoffset="25"
 							></circle>
@@ -57,7 +57,7 @@ const Resources = () => {
 								r="15.91549430918954"
 								fill="transparent"
 								stroke="#eb5757"
-								strokeWidth="8"
+								strokeWidth="7"
 								strokeDasharray="76 24"
 								strokeDashoffset="25"
 							></circle>
@@ -88,7 +88,7 @@ const Resources = () => {
 								r="15.91549430918954"
 								fill="transparent"
 								stroke="#2fa7e3"
-								strokeWidth="8"
+								strokeWidth="7"
 								strokeDasharray="100 0"
 								strokeDashoffset="25"
 							></circle>

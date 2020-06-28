@@ -19,9 +19,18 @@ aside {
 	&Item {
 		display: flex;
 		align-items: center;
+		cursor: pointer;
 
 		&Icon {
 			margin-right: 11px;
+		}
+
+		&Disable {
+			cursor: default;
+
+			.navListItemText {
+				opacity: 0.3;
+			}
 		}
 
 		& + & {

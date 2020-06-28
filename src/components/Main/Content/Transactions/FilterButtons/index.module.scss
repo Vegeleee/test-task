@@ -19,21 +19,28 @@
 			padding: 0;
 			border: none;
 			cursor: pointer;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				border-bottom: 3px solid transparent;
+				border-radius: 5px;
+				left: 0;
+				bottom: -10px;
+				transition: ease 0.3s;
+			}
 
 			&Active {
-				position: relative;
-
 				&::after {
-					content: '';
-					position: absolute;
-					height: 5px;
-					width: 100%;
-					background-color: #f8a303;
-					border-radius: 5px;
-					left: 0;
-					bottom: -10px;
+					border-bottom: 3px solid #f8a303;
 				}
 			}
+		}
+
+		.filterButton:hover::after {
+			border-bottom: 3px solid #f8a303;
 		}
 
 		.filterButton + .filterButton {

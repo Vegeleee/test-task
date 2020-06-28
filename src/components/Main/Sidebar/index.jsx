@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 
 import walletIcon from './../../../images/sidebar-icons/wallet.svg'
 import stakedIcon from './../../../images/sidebar-icons/staked.svg'
@@ -14,19 +15,19 @@ const Sidebar = () => {
 				<ul className={styles.navList}>
 					<li className={styles.navListItem}>
 						<img src={walletIcon} alt="Icon" className={styles.navListItemIcon} />
-						Wallet
+						<span className={styles.navListItemText}>Wallet</span>
 					</li>
 					<li className={styles.navListItem}>
 						<img src={stakedIcon} alt="Icon" className={styles.navListItemIcon} />
-						Staked
+						<span className={styles.navListItemText}>Staked</span>
 					</li>
-					<li className={styles.navListItem}>
+					<li className={cn(styles.navListItem, styles.navListItemDisable)}>
 						<img src={ambassadorsIcon} alt="Icon" className={styles.navListItemIcon} />
-						Ambassadors
+						<span className={styles.navListItemText}>Ambassadors</span>
 					</li>
-					<li className={styles.navListItem}>
+					<li className={cn(styles.navListItem, styles.navListItemDisable)}>
 						<img src={followersIcon} alt="Icon" className={styles.navListItemIcon} />
-						Followers
+						<span className={styles.navListItemText}>Followers</span>
 					</li>
 				</ul>
 			</nav>

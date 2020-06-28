@@ -12,12 +12,17 @@
 		font-size: 14px;
 		line-height: 17px;
 		border: none;
+		cursor: pointer;
 
 		&Primary {
 			background: linear-gradient(22.88deg, #ffa300 31.27%, #ffd1aa 100%);
 			box-shadow: 0px 0px 0.892857px rgba(236, 124, 42, 0.12), 0px 1.19048px 1.78571px rgba(236, 124, 42, 0.18),
 				0px 2.67857px 4.16667px rgba(236, 124, 42, 0.2), 0px 4.7619px 8.92857px rgba(236, 124, 42, 0.3);
 			border-radius: 29.7619px;
+
+			&:hover {
+				background: linear-gradient(22.88deg, #ffd1aa 100%, #ffa300 31.27%);
+			}
 		}
 
 		&Secondary {
@@ -26,6 +31,10 @@
 				0px 2.67857px 4.16667px rgba(112, 112, 112, 0.2), 0px 4.7619px 8.92857px rgba(112, 112, 112, 0.3);
 			border-radius: 29.7619px;
 			color: #fff;
+
+			&:hover {
+				background: darken(#5d6171, 10);
+			}
 		}
 
 		&Icon {

@@ -90,7 +90,7 @@ const DATA = [
 const TransactionsTable = () => {
 	return (
 		<div className={styles.wrapper}>
-			<table className={styles.table}>
+			<table className={styles.table} cellPadding="7">
 				<colgroup>
 					<col width="50" />
 					<col width="180" />
@@ -98,7 +98,7 @@ const TransactionsTable = () => {
 					<col width="130" />
 				</colgroup>
 				<thead className={cn('textGray', styles.tableHead)}>
-					<tr className={styles.tableRow}>
+					<tr>
 						<th className={styles.textAlignLeft}>Rank</th>
 						<th className={styles.textAlignLeft}>Date &#8226; Time</th>
 						<th className={styles.textAlignLeft}>Name</th>
@@ -107,7 +107,7 @@ const TransactionsTable = () => {
 				</thead>
 				<tbody className={styles.tableBody}>
 					{DATA.map(({ id, date, time, user, count, currency, isIn }) => (
-						<tr key={id}>
+						<tr key={id} className={styles.tableRow} border-bottom-color="#3e445b">
 							<td>
 								<img src={isIn ? walletInTableIcon : walletOutTableIcon} alt="Icon" />
 							</td>
