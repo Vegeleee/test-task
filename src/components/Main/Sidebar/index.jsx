@@ -13,7 +13,7 @@ const Sidebar = () => {
 		<aside>
 			<nav>
 				<ul className={styles.navList}>
-					<li className={styles.navListItem}>
+					<li className={cn(styles.navListItem, styles.navListItemActive)}>
 						<img src={walletIcon} alt="Icon" className={styles.navListItemIcon} />
 						<span className={styles.navListItemText}>Wallet</span>
 					</li>
@@ -21,11 +21,11 @@ const Sidebar = () => {
 						<img src={stakedIcon} alt="Icon" className={styles.navListItemIcon} />
 						<span className={styles.navListItemText}>Staked</span>
 					</li>
-					<li className={cn(styles.navListItem, styles.navListItemDisable)}>
+					<li className={styles.navListItem}>
 						<img src={ambassadorsIcon} alt="Icon" className={styles.navListItemIcon} />
 						<span className={styles.navListItemText}>Ambassadors</span>
 					</li>
-					<li className={cn(styles.navListItem, styles.navListItemDisable)}>
+					<li className={styles.navListItem}>
 						<img src={followersIcon} alt="Icon" className={styles.navListItemIcon} />
 						<span className={styles.navListItemText}>Followers</span>
 					</li>

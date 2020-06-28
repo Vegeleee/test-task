@@ -20,10 +20,82 @@ header {
 		line-height: 17px;
 		letter-spacing: 0.04em;
 	}
+
+	&:hover {
+		.modal {
+			opacity: 1;
+			padding-top: 24px;
+			visibility: visible;
+		}
+	}
 }
 
 .accountIcon {
 	margin-left: 14px;
 	height: 40px;
 	width: 40px;
+}
+
+.modal {
+	position: absolute;
+	right: 60px;
+	top: 60px;
+	padding: 24px;
+	padding-top: 0;
+	background: #fff;
+	box-shadow: 0px 1.4945px 1.53979px rgba(0, 0, 0, 0.02), 0px 4.13211px 4.25733px rgba(0, 0, 0, 0.025),
+		0px 9.94853px 10.25px rgba(0, 0, 0, 0.03), 0px 33px 34px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	cursor: default;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	transition: opacity ease-in-out 0.15s, padding-top ease-in-out 0.15s, visibility ease-in-out 0.15s;
+
+	&Head {
+		border-bottom: 1px solid #000;
+		margin-bottom: 24px;
+
+		.accountName {
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		.accountId {
+			display: flex;
+			align-items: center;
+			padding-bottom: 12px;
+
+			&Text {
+				opacity: 0.45;
+				margin-right: 17px;
+			}
+
+			&Icon {
+				cursor: pointer;
+			}
+		}
+	}
+
+	&List {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		&Item {
+			display: flex;
+			align-items: center;
+			padding: 8px 0;
+			cursor: pointer;
+			transition: ease 0.3s;
+
+			&Icon {
+				margin-right: 8px;
+			}
+
+			&:hover {
+				background-color: rgba(62, 68, 91, 0.1);
+			}
+		}
+	}
 }

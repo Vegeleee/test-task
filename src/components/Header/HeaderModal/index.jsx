@@ -1,5 +1,4 @@
 import React from 'react'
-import cn from 'classnames'
 
 import copyIcon from './../../../images/account-icons/copy.svg'
 import keyIcon from './../../../images/modal-icons/key.svg'
@@ -8,9 +7,9 @@ import logoutIcon from './../../../images/modal-icons/logout.svg'
 
 import styles from './index.module.scss'
 
-const HeaderModal = ({ modalClassName }) => {
+const HeaderModal = ({ isModalShow }) => {
 	return (
-		<div className={cn(modalClassName, styles.modal)}>
+		<div className={cn(styles.modal, isModalShow && styles.modalActive)}>
 			<div className={styles.modalHead}>
 				<h2 className={styles.accountName}>Account name</h2>
 				<div className={styles.accountId}>
